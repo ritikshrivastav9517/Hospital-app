@@ -42,40 +42,12 @@ A modern React-based project utilizing the latest frontend technologies and tool
 │   ├── styles/          # Global styles and Tailwind configuration
 │   ├── App.jsx          # Main application component
 │   ├── main.jsx         # Application entry point
-│   └── Routes.jsx       # Application routes
 ├── index.html           # HTML template
 ├── package.json         # Project dependencies and scripts
 ├── postcss.config.js    # PostCSS configuration for Tailwind
 ├── tailwind.config.js   # Tailwind CSS configuration
 ├── vite.config.js       # Vite configuration
 ```
-
-## 🧩 Adding Routes
-
-To add new routes to the application, update the `Routes.jsx` file:
-
-```jsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Import page components
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-
-const AppRoutes = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </Router>
-  );
-};
-
-export default AppRoutes;
-```
-
 ## 🎨 Styling
 
 This project uses Tailwind CSS for styling. The configuration includes:
@@ -92,11 +64,3 @@ Build the application for production:
 ```bash
 npm run build
 ```
-
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new
